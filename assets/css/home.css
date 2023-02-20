@@ -1,6 +1,7 @@
 /* Primary banner */
 
 #primary-banner {
+    width: 100%;
     background-image: url('../images/home/churrasco2.jpg');
     height: 100vh;
     display: flex;
@@ -15,6 +16,7 @@
 }
 
 @media screen and (max-width: 500px) {
+    #primary-banner { background-image: url('../images/home/churrasco2-mobile.jpg'); }
     #primary-banner h1 { font-size: 48px; width: 100%; }
 }
 
@@ -70,4 +72,66 @@
 @media screen and (max-width: 500px) {
     .description {padding: 15%}
     .description p { font-size:22px }
+}
+
+/* About */
+
+.about {
+    background: rgb(240,240,216);
+    background: linear-gradient(180deg, rgba(240,240,216,1) 50%, rgba(38,37,28,1) 50%);
+    min-height: 100vh;
+    height: 100%;
+    padding: 10% 5%;
+    width: 100%;
+    gap: 60px;
+}
+
+.about-banner-wraper {
+    width: 50%;
+}
+
+.about-banner-1,
+.about-banner-2
+{
+    width: 100%;
+    height: 90vh;
+    
+}
+
+.about-banner-1 {
+    background-image: url(../images/home/jantar.jpg);
+    margin-top: -40px
+}
+
+.about-banner-2 {
+    background-image: url(../images/home/peixe.jpg);
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .about {
+        padding: 15% 10%;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .about-banner-wraper { width: 100%; }
+    
+    .about-banner-1,
+    .about-banner-2
+    {
+        height: 50vh;   
+    }
+
+    .about-banner-1 {
+        background-image: url(../images/home/jantar-mobile.jpg);
+        margin-top: unset;
+        transform: translateX(-10%);
+    }
+    
+    .about-banner-2 {
+        background-image: url(../images/home/peixe-mobile.jpg);
+        margin-top: unset;
+        transform: translate(10%, -20%);
+    }
 }
