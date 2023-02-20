@@ -36,6 +36,11 @@ ol, ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 
 /* CSS presets */
 
@@ -75,4 +80,11 @@ padding: 5px 30px;
 #contato {
   height: 150vh;
   background-color: var(--light-blue);
+}
+
+.full-banner {
+  width: 100%;
+  padding: 7%;
+  background-position: center center;
+  background-size: cover;
 }
