@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Labrada&family=Poppins:ital,wght@0,300;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada&family=Poppins:ital,wght@0,300;0,500;1,200&display=swap');
+
+:root {
+  --primary: #eb0a44;
+  --secundary: #f2643d;
+  --yellow: #f2a73d;
+  --light-blue: #a0e8b7;
+  --light: #f0f0d8;
+  --dark: #26251c;
+  --main-family: 'Poppins', sans-serif;
+  --title-family: 'Labrada', sans-serif;
+  --subtitle-family: 'Amita', sans-serif;
+}
+
+
+/* CSS resets */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+
+/* CSS presets */
+
+* {
+  font-family: var(--main-family);
+}
+
+h1, h2 {
+  font-family: var(--title-family);
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--subtitle-family);
+}
+
+/* Styled components */
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-spaced {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+text-decoration: none;
+border: 1px solid;
+border-radius: 20px;
+padding: 5px 30px;
+}
+
+#contato {
+  height: 150vh;
+  background-color: var(--light-blue);
+}
